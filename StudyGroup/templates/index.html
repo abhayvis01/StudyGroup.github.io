@@ -1,0 +1,162 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Study Group App</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-graduation-cap"></i>
+            Study Group
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('register') }}" class="btn btn-primary">Register</a>
+            <a href="{{ url_for('login') }}" class="btn btn-secondary">Login</a>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1>Your Virtual Study Companion</h1>
+            <p class="hero-text">Join a community of learners, create study groups, and excel together through virtual collaboration.</p>
+            <div class="cta-buttons">
+                <a href="{{ url_for('register') }}" class="btn btn-large btn-primary">Get Started Free</a>
+                <a href="#features" class="btn btn-large btn-outline">Explore Features</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="quick-actions">
+        <div class="action-card">
+            <i class="fas fa-users"></i>
+            <h3>Create Class</h3>
+            <p>Start a new study group for your subject</p>
+            <a href="#" class="btn btn-secondary">Create Now</a>
+        </div>
+        <div class="action-card">
+            <i class="fas fa-video"></i>
+            <h3>Start Meeting</h3>
+            <p>Connect via Google Meet integration</p>
+            <a href="#" class="btn btn-secondary">Schedule Meet</a>
+        </div>
+        <div class="action-card">
+            <i class="fas fa-user-plus"></i>
+            <h3>Add Friends</h3>
+            <p>Connect with fellow students</p>
+            <a href="#" class="btn btn-secondary">Find Friends</a>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <h2>Everything You Need to Study Better</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Virtual Classrooms</h3>
+                <p>Create dedicated spaces for different subjects and topics</p>
+                <ul class="feature-list">
+                    <li>File sharing</li>
+                    <li>Discussion boards</li>
+                    <li>Assignment tracking</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-video"></i>
+                <h3>Video Meetings</h3>
+                <p>Seamless integration with Google Meet</p>
+                <ul class="feature-list">
+                    <li>One-click meetings</li>
+                    <li>Screen sharing</li>
+                    <li>Recording options</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Study Planner</h3>
+                <p>Organize your study sessions effectively</p>
+                <ul class="feature-list">
+                    <li>Schedule meetings</li>
+                    <li>Set reminders</li>
+                    <li>Track progress</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stat-card">
+            <h3>10k+</h3>
+            <p>Active Users</p>
+        </div>
+        <div class="stat-card">
+            <h3>5k+</h3>
+            <p>Study Groups</p>
+        </div>
+        <div class="stat-card">
+            <h3>50k+</h3>
+            <p>Study Sessions</p>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Create Account</h3>
+                <p>Sign up and complete your profile</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Join or Create Class</h3>
+                <p>Find your subject or start a new group</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Connect & Study</h3>
+                <p>Meet virtually and achieve together</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StudyGroup</h3>
+                <p>Making virtual learning collaborative and effective.</p>
+                <br>
+                <p></p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">Features</a>
+                <a href="#">Contact</a>
+                <a href="#">Add Friends</a>
+
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 StudyGroup. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
